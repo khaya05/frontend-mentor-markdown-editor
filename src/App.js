@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Aside from './components/Aside';
+import Header from './components/Header';
+import Markdown from './components/Markdown';
 
-function App() {
+import './App.css';
+const App = () => {
+  const [showAside, setShowAside] = useState(false)
+
+  const toggleAside = () => {
+    setShowAside((prevState) => !prevState);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={`main ${showAside ? 'flex' : ''}`}>
+      {showAside && <Aside />}
+      <div>
+        <Header showAside={showAside} toggleAside ={toggleAside} />
+        <Markdown />
+      </div>
+    </main>
   );
-}
+};
 
 export default App;

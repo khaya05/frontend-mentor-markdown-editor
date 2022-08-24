@@ -1,0 +1,79 @@
+.input, .output {
+  padding: 1em 1.25em
+}
+
+/* .input {
+  transform: var(--transition);
+  height: 100%
+}
+
+.input.toggle {
+  margin: 0;
+  padding: 0;
+  height: 0px
+}
+
+.output {
+  height: 100%;
+  transition: var(--transition);
+}
+
+.output.toggle {
+  /* position: relative; */
+
+
+.input__area{
+  width: 100%;
+  height: 100%;
+  /* height: auto; */
+  border: none;
+  font-size: var(--roboto-slab);
+  color: var(--txt-dark-1);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+
+blockquote p {
+  padding: 0;
+  color: var(--txt-dark-1);
+  font-weight: 700;
+}
+
+blockquote {
+  margin-block: 1.25rem;
+  border-left: 4px solid var(--orange-dark);
+}
+
+pre, blockquote {
+  padding: 1.5em;
+  background: var(--light-block-bg);
+  border-radius: 4px;
+}
+
+code {
+  color: var(--txt-dark-1);
+}
+
+ul, ol {
+  margin-left: 1.5rem;
+}
+
+ol {
+  margin-bottom: 1.25em;
+}
+
+
+ul li::marker {
+  color: var(--orange-dark);
+}
+
+li:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+body:last-child {
+  margin-bottom: calc(54px - 1em);
+}
+

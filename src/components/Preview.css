@@ -1,0 +1,28 @@
+.container {
+  margin-top: 56px;
+  /* position: sticky; */
+  /* z-index: 99;
+  insert: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--light-preview-bg);
+  height: 2.625em;
+  padding: 0.875em 1em;
+}
+
+.container p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 1em;
+  letter-spacing: 2px;
+  color: var(--txt-grey-light);
+}
+
+.show-icon {
+  height: 5.6px;
+  width: 5.6px;
+  background: inherit;
+  border: none;
+}

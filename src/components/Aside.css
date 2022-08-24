@@ -1,0 +1,9 @@
+aside {
+  height: 100%;
+  width: 66.6666%;
+  background-color: var(--aside-dark-bg)
+}
+
+.aside.hidden {
+  display: none;
+}
