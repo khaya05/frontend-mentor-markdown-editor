@@ -2,6 +2,7 @@
   --orange-dark: #E46643;
   --orange-light: #F39765;
   --txt-dark-1: #35393F;
+  --grey: #5A6069;
   --txt-grey-light: #7C8187;
   --light-preview-bg: #F5F5F5;
   --dark-header-bg: #2B2D31;
@@ -11,7 +12,7 @@
   --roboto-mono: 'Roboto Mono';
   --roboto-slab: 'Roboto Slab';
 
-  --transition: all 5s ease;
+  --transition: all .3s ease;
 }
 
 *, *::before, *::after {

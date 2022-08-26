@@ -1,3 +1,17 @@
 .main.flex {
   display: flex;
 }
+
+/* main {
+  display: flex;
+} */
+
+.markdown {
+  transition: var(--transition);
+
+}
+
+.markdown.translate {
+  transform: translateX(250px);
+  /* overflow-x: ; */
+}

@@ -9,9 +9,9 @@ header {
   background-color: var(--dark-header-bg);
   height: 3.5em;
   height: 56px;
-  position: fixed;
-  inset: 0;
-  z-index: 99;
+  /* position: fixed;
+  inset: 0; */
+  /* z-index: 99; */
 }
 
 .header__btn-container {
@@ -65,6 +65,15 @@ header {
   border-bottom: 1px solid white;
 }
 
+.delete-btn{
+  background: none;
+  border: none;
+  color: var(--txt-grey-light);
+  width: 18px;
+  height: 20px;
+
+}
+
 /* .save-btn-container {
   margin: 8px;
 
@@ -77,6 +86,7 @@ header {
   /* padding: 1.5em; */
   border: none;
   background-color: var(--orange-dark);
+  margin-left: 8px;
 }
 
 .save-btn:hover {

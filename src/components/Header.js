@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import menuIcon from '../assets/icon-menu.svg';
 import closeIcon from '../assets/icon-close.svg';
-import documentIcon from '../assets/icon-document.svg';
 import deleteIcon from '../assets/icon-delete.svg';
 import saveIcon from '../assets/icon-save.svg';
 
+import FileIcon from './FileIcon';
 import './Header.css'
 
 
@@ -17,7 +17,7 @@ const Header = ({ showAside, toggleAside }) => {
   };
 
   return (
-    <header className="header">
+    <header>
       <div className="header__btn-container">
         <button className="toggle-menu" onClick={toggleAside} >
           {showAside ? (
@@ -29,8 +29,8 @@ const Header = ({ showAside, toggleAside }) => {
       </div>
 
       <div className="header__file-info-container">
-        <div className="document-icon">
-          <img src={documentIcon} alt="document icon" />
+        <div>
+          <FileIcon />
         </div>
 
         <div className="input-container">

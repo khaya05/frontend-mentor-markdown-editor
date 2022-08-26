@@ -1,9 +1,22 @@
 aside {
-  height: 100%;
-  width: 66.6666%;
-  background-color: var(--aside-dark-bg)
+  display: none;
+  position: absolute;
+  insert: 0;
+  height: 100vh;
+  width: 0;
+  height: 100vh;
+  padding: 1.875em 1.5em;
+  background-color: var(--aside-dark-bg);
+  transition: var(--transition);
 }
 
-.aside.hidden {
-  display: none;
+.aside.show{
+  display: block;
+  width: 250px;
 }
+
+.theme-toggle-btn-container {
+  display: relative;
+  bottom: 2400px
+}
+

@@ -5,16 +5,17 @@ import Markdown from './components/Markdown';
 
 import './App.css';
 const App = () => {
-  const [showAside, setShowAside] = useState(false)
+  const [showAside, setShowAside] = useState(!false);
 
   const toggleAside = () => {
     setShowAside((prevState) => !prevState);
   };
+
   return (
-    <main className={`main ${showAside ? 'flex' : ''}`}>
-      {showAside && <Aside />}
-      <div>
-        <Header showAside={showAside} toggleAside ={toggleAside} />
+    <main>
+      <Aside showAside={showAside} toggleAside={toggleAside} />
+      <div className={`markdown ${showAside ? 'translate' : ''}`}>
+        <Header showAside={showAside} toggleAside={toggleAside} />
         <Markdown />
       </div>
     </main>
@@ -22,3 +23,13 @@ const App = () => {
 };
 
 export default App;
+
+// return (
+//   <main className={`main ${showAside ? 'flex' : ''}`}>
+//     {showAside && <Aside />}
+//     <div>
+//       <Header showAside={showAside} toggleAside={toggleAside} />
+//       <Markdown />
+//     </div>
+//   </main>
+// );
