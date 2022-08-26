@@ -1,4 +1,5 @@
 :root {
+  --dark: #151619;
   --orange-dark: #E46643;
   --orange-light: #F39765;
   --txt-dark-1: #35393F;
@@ -8,6 +9,7 @@
   --dark-header-bg: #2B2D31;
   --lighter-header-btn-bg: #35393F;
   --aside-dark-bg: #1D1F22;
+  --overlay-dark: rgba(var(--dark), 0.5);
 
   --roboto-mono: 'Roboto Mono';
   --roboto-slab: 'Roboto Slab';

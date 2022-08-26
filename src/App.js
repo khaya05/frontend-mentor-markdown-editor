@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Markdown from './components/Markdown';
 
 import './App.css';
+import DeleteModal from './components/DeleteModal';
 const App = () => {
   const [showAside, setShowAside] = useState(!false);
 
@@ -23,13 +24,3 @@ const App = () => {
 };
 
 export default App;
-
-// return (
-//   <main className={`main ${showAside ? 'flex' : ''}`}>
-//     {showAside && <Aside />}
-//     <div>
-//       <Header showAside={showAside} toggleAside={toggleAside} />
-//       <Markdown />
-//     </div>
-//   </main>
-// );

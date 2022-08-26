@@ -13,5 +13,5 @@
 
 .markdown.translate {
   transform: translateX(250px);
-  /* overflow-x: ; */
+  overflow: hidden;
 }

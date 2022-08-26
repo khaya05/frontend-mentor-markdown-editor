@@ -1,0 +1,18 @@
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(21, 22, 25, 0.5);
+}
+
+.overlay-content {
+  position: relative;
+  width: 343px;
+  height: 218px;
+  left: 16px;
+  top: 225px;
+}
