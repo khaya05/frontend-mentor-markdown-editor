@@ -8,30 +8,95 @@ header,
 header {
   background-color: var(--dark-header-bg);
   height: 3.5em;
-  height: 56px;
   /* position: fixed;
   inset: 0; */
   /* z-index: 99; */
 }
 
+@media (min-width: 48em) {
+  header{
+    height: 4.5em;
+  }
+}
+
+
 .header__btn-container {
   margin-right: 1.5em;
   height: 100%;
   aspect-ratio: 1;
-  padding: 1.3125em 14px;
+  /* padding-block: 21px; */
+  display: grid;
+  place-items: center;
   background-color: var(--lighter-header-btn-bg);
+}
+@media (min-width: 90em){
+  .header__btn-container {
+    margin-right: 0;
+  }
+}
+
+.menu-icon {
+  width: 1.4373em;
+  height: 0.875em;
+}
+
+.header__logo-container {
+  display: none;
+}
+
+@media (min-width: 90em) {
+  .header__logo-container{
+    width: 11.5em;
+    height: 100%;
+    border-right: 1px solid var(--grey);
+    display: grid;
+    place-items: center;
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 48em) {
+  .menu-icon {
+    width: 1.125em;
+    height: 31.875em
+  }
 }
 
 .toggle-menu {
-  width: 1.4373em;
+  margin: 0; padding: 0;
   border: none;
   background: inherit;
-  height: 0.875em;
 }
+
 
 .header__file-info-container {
   height: 100%;
   width: calc(100% - 56px - 24px);
+}
+
+.left {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%
+}
+
+@media (min-width: 48em) {
+   .header__file-info-container{
+    padding: 1em;
+  }
+}
+
+.file-name-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__file-icon-container {
+  margin-right: 1em;
+  margin-left: 24px;
 }
 
 .document-icon {
@@ -65,30 +130,29 @@ header {
   border-bottom: 1px solid white;
 }
 
-.delete-btn{
-  background: none;
-  border: none;
-  color: var(--txt-grey-light);
-  width: 18px;
-  height: 20px;
-
+.save-delete-file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* .save-btn-container {
-  margin: 8px;
+.save-btn-container {
+  height: 2.5em;
+  width: 2.5em;
+  margin-right: 8px;
+  margin-left: 24px;
+}
 
-} */
-
-.save-btn {
-  width: 2.5em; aspect-ratio: 1;
-  /* height: cal(100% - 1em); */
-  border-radius: 4px;
-  /* padding: 1.5em; */
-  border: none;
-  background-color: var(--orange-dark);
-  margin-left: 8px;
+@media (min-width: 48em) {
+  .save-btn-container {
+    width: 9.625em;
+    height: 40px;
+  }
 }
 
 .save-btn:hover {
   background: var(--orange-light);
 }
+
+
+

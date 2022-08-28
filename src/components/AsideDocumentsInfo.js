@@ -2,14 +2,13 @@ import files from '../current-files'
 import FileIcon from './FileIcon';
 
 import './AsideDocumentsInfo.css';
+import OrangeBtn from './UI/OrangeBtn';
 
 const AsideDocumentsInfo = () => {
   return (
     <div className='docs-info'>
       <h3>my documents</h3>
-      <button className='add-document'>
-        + new document
-      </button>
+      <OrangeBtn>+ new document</OrangeBtn>
       <section className='current-docs'>
         {files.map(item => {
           const { date, title, id } = item;

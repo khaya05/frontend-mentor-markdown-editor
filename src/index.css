@@ -6,6 +6,7 @@
   --grey: #5A6069;
   --txt-grey-light: #7C8187;
   --light-preview-bg: #F5F5F5;
+  --light-border-grey: #E4E4E4;
   --dark-header-bg: #2B2D31;
   --lighter-header-btn-bg: #35393F;
   --aside-dark-bg: #1D1F22;
@@ -16,6 +17,19 @@
 
   --transition: all .3s ease;
 }
+
+.light-mode {
+  --heading-color: var(--txt-dark-1);
+  --main-p-grey-color: var(--txt-dark-1);
+
+
+
+}
+
+.dark-mode{
+
+}
+
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -79,7 +93,7 @@ textarea:focus, input:focus{
 
 
 /* margin bottom */ 
-p, h2, h3, h4, h5, h6, pre {
+p, h2, h4, h5, h6, pre {
   margin-bottom: 1.25em;
 }
 

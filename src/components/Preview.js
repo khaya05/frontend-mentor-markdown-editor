@@ -1,7 +1,7 @@
 import React from 'react';
 import './Preview.css';
 
-const Preview = ({ label, icon, togglePreview }) => {
+const Preview = ({ label, icon, togglePreview}) => {
   return (
     <div className="container">
       <div className="container__label">

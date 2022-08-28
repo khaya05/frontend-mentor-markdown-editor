@@ -1,8 +1,4 @@
 .container {
-  /* margin-top: 56px; */
-  /* position: sticky; */
-  /* z-index: 99;
-  insert: 0; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

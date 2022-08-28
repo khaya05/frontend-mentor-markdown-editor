@@ -15,3 +15,7 @@
   transform: translateX(250px);
   overflow: hidden;
 }
+
+.main__aside-container {
+  position: fixed
+}
