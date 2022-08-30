@@ -3,7 +3,7 @@ import './Aside.css';
 import AsideDocumentsInfo from './AsideDocumentsInfo';
 import MarkdownLogo from './MarkdownLogo';
 import ThemeButton from './ThemeButton';
-const Aside = ({ showAside }) => {
+const Aside = ({ showAside, darkMode, toggleDarkMode }) => {
   return (
     <aside className={`${showAside ? 'aside show' : ''}`}>
       <div className="logo-container">
@@ -11,7 +11,7 @@ const Aside = ({ showAside }) => {
       </div>
       <AsideDocumentsInfo />
       <div className='theme-toggle-btn-container'>
-        <ThemeButton />
+        <ThemeButton darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
     </aside>
   );

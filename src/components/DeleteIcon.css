@@ -1,7 +1,7 @@
 .delete-btn{
   background: none;
   border: none;
-  color: var(--txt-grey-light);
+  color: var(--grey-light-500);
   width: 18px;
   height: 20px;
 }

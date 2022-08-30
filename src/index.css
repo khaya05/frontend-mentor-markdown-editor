@@ -1,16 +1,17 @@
 :root {
+  --white: #FFFFFF;
   --dark: #151619;
   --orange-dark: #E46643;
   --orange-light: #F39765;
-  --txt-dark-1: #35393F;
+  --dark-700: #35393F;
+  --dark-800: #2B2D31;
+  --dark-900: #1D1F22;
   --grey: #5A6069;
-  --txt-grey-light: #7C8187;
-  --light-preview-bg: #F5F5F5;
+  --grey-400: #C1C4CB;
+  --grey-600: #5A6069;
+  --grey-light-500: #7C8187;
+  --grey-light-200: #F5F5F5;
   --light-border-grey: #E4E4E4;
-  --dark-header-bg: #2B2D31;
-  --lighter-header-btn-bg: #35393F;
-  --aside-dark-bg: #1D1F22;
-  --overlay-dark: rgba(var(--dark), 0.5);
 
   --roboto-mono: 'Roboto Mono';
   --roboto-slab: 'Roboto Slab';
@@ -19,15 +20,31 @@
 }
 
 .light-mode {
-  --heading-color: var(--txt-dark-1);
-  --main-p-grey-color: var(--txt-dark-1);
-
-
-
+  --heading-color: var(--dark-700);
+  --blockquote-p: var(--dark-700);
+  --code-bg: var(--grey-light-200);
+  --main-p-grey-color: var(--grey-light-500);
+  --modal-overlay: var(--grey-light-500);
+  --modal-bg: var(--white);
+  --preview-border: var(--light-border-grey);
+  --preview-markdown-top-sec: var(--grey-light-200);
+  --preview-markdown-top-color: var(--grey-light-500);
+  --main-bg-color: var(--white)
+  transition: var(--transition);
 }
 
 .dark-mode{
-
+  --heading-color: var(--white);
+  --blockquote-p: var(--white);
+  --code-bg: var(--dark-800);
+  --main-p-grey-color: var(--grey-400);
+  --modal-bg: var(--dark-900);
+  --modal-overlay: var(--grey-light-500);
+  --preview-border: var(--light-border-grey);
+  --preview-markdown-top-sec: var(--dark-900);
+  --preview-markdown-top-color: var(--grey-400);
+  --main-bg-color: var(--dark)
+  transition: var(--transition);
 }
 
 
@@ -36,6 +53,9 @@
   margin: 0; padding: 0;
 }
 
+body {
+  background-color: var(--main-bg-color);
+}
 
 /* font */
 h1, h2, h3, h4, h5, h6, p {
@@ -43,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2, h3, h4, h5 {
-  color: var(--txt-dark-1)
+  color: var(--heading-color)
 }
 
 h1, h3, h4, h5, h6 , .p-bold{
@@ -98,11 +118,11 @@ p, h2, h4, h5, h6, pre {
 }
 
 a {
-  color: var(--txt-dark-1)
+  color: var(--blockquote-p)
 }
 
 p, ul, ol {
-  color: var(--txt-grey-light);
+  color: var(--grey-light-500);
   font-size: 0.875em;
   font-family: var(--roboto-slab);
 }

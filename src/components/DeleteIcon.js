@@ -2,9 +2,9 @@ import deleteIcon from '../assets/icon-delete.svg';
 
 import './DeleteIcon.css'
 
-const DeleteIcon = () => {
+const DeleteIcon = ({toggleModal}) => {
   return (
-    <button className="delete-btn">
+    <button className="delete-btn" onClick={() => toggleModal()}>
       <img src={deleteIcon} alt="delete" />
     </button>
   );

@@ -1,6 +1,6 @@
 blockquote p {
   padding: 0;
-  color: var(--txt-dark-1);
+  color: var(--blockquote-p);
   font-weight: 700;
 }
 
@@ -11,12 +11,12 @@ blockquote {
 
 pre, blockquote {
   padding: 1.5em;
-  background: var(--light-block-bg);
+  background: var(--code-bg);
   border-radius: 4px;
 }
 
 code {
-  color: var(--txt-dark-1);
+  color: var(--blockquote-p);
 }
 
 ul, ol {

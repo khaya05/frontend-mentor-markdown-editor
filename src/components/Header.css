@@ -6,7 +6,7 @@ header,
 }
 
 header {
-  background-color: var(--dark-header-bg);
+  background-color: var(--dark-800);
   height: 3.5em;
   /* position: fixed;
   inset: 0; */
@@ -27,7 +27,7 @@ header {
   /* padding-block: 21px; */
   display: grid;
   place-items: center;
-  background-color: var(--lighter-header-btn-bg);
+  background-color: var(--dark-700);
 }
 @media (min-width: 90em){
   .header__btn-container {
@@ -112,7 +112,7 @@ header {
 .input-container label {
   display: block;
   margin-bottom: 3px;
-  color: var(--txt-grey-light);
+  color: var(--grey-light-500);
   font-weight: 300px;
   font-size: 0.8125em;
   text-transform: capitalize;

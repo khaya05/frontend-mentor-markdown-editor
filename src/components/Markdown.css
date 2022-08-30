@@ -2,9 +2,9 @@
   padding: 1em 1.25em
 }
 
-.output {
+/* .output {
   border: 1px solid red;
-}
+} */
 
 
 @media (min-width: 48em) {
@@ -34,7 +34,7 @@
   }
 
   .markdown-main__input-container{
-    border-right: 1px solid var(--light-border-grey);
+    border-right: 1px solid var(--preview-border);
   }
   .markdown-main__input-container .show-icon {
     display: none;

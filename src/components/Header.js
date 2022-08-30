@@ -8,7 +8,7 @@ import SaveChangesBtn from './SaveChangesBtn';
 import DeleteIcon from './DeleteIcon';
 import MarkdownLogo from './MarkdownLogo';
 
-const Header = ({ showAside, toggleAside }) => {
+const Header = ({ showAside, toggleAside, showModal, toggleModal }) => {
   const [fileName, setFileName] = useState('welcome.md');
   const [isEditing, setIsEditing] = useState(false);
 
@@ -54,7 +54,7 @@ const Header = ({ showAside, toggleAside }) => {
 
         <div className="save-delete-file">
           <div className="delete-btn-container">
-            <DeleteIcon />
+            <DeleteIcon toggleModal={toggleModal} />
           </div>
 
           <div className="save-btn-container">

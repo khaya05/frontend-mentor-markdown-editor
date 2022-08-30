@@ -6,7 +6,7 @@ aside {
   width: 0;
   height: 100vh;
   padding: 1.875em 1.5em;
-  background-color: var(--aside-dark-bg);
+  background-color: var(--dark-900);
   transition: var(--transition);
 }
 

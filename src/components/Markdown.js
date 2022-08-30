@@ -25,7 +25,6 @@ const Markdown = () => {
   const togglePreview = () => {
     setIsMarkdownVisible(prevState => !prevState)
   }
-  console.log(isMarkdownVisible);
   return (
     <section className="markdown-main">
       <div
